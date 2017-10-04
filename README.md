@@ -1,4 +1,4 @@
-fbp-protocol-healthcheck [![Build Status](https://travis-ci.org/flowbased/fbp-protocol-healthcheck.svg?branch=master)](https://travis-ci.org/flowbased/fbp-protocol-healthcheck)
+fbp-protocol-healthcheck [![Build Status](https://travis-ci.org/flowbased/fbp-protocol-healthcheck.svg?branch=master)](https://travis-ci.org/flowbased/fbp-protocol-healthcheck) [![Coverage Status](https://coveralls.io/repos/github/flowbased/fbp-protocol-healthcheck/badge.svg?branch=master)](https://coveralls.io/github/flowbased/fbp-protocol-healthcheck?branch=master)
 ========================
 
 Tool for checking whether a [FBP protocol](https://flowbased.github.io/fbp-protocol/) runtime is available and responding. Performs the following actions:
