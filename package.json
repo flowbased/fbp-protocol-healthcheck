@@ -1,0 +1,39 @@
+{
+  "name": "fbp-protocol-healthcheck",
+  "version": "1.0.0",
+  "description": "Health checking utility for FBP protocol runtimes",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run lint && npm run spec",
+    "lint": "eslint lib/*.js index.js",
+    "spec": "nyc mocha --reporter spec spec/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/flowbased/fbp-protocol-healthcheck.git"
+  },
+  "author": "Henri Bergius <henri.bergius@iki.fi>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/flowbased/fbp-protocol-healthcheck/issues"
+  },
+  "homepage": "https://github.com/flowbased/fbp-protocol-healthcheck#readme",
+  "dependencies": {
+    "fbp-protocol-client": "^0.1.12"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.8.0",
+    "eslint-config-airbnb-base": "^12.0.1",
+    "eslint-plugin-import": "^2.7.0",
+    "mocha": "^4.0.0",
+    "nyc": "^11.2.1",
+    "websocket": "^1.0.24"
+  },
+  "nyc": {
+    "include": [
+      "lib/*.js",
+      "*.js"
+    ]
+  }
+}
