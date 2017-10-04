@@ -1,3 +1,11 @@
 language: node_js
 node_js:
 - '8'
+deploy:
+  provider: npm
+  email: henri.bergius@iki.fi
+  api_key:
+    secure: W0Si1IofBDC5SNp3r2nUb3XN/0GJa417+dIEAjNpwfK7tws3eqyx8tC4SwWzjfN4jPHxHXvl69oFfGuGmaCaYFdRn8fsDZYovaO/Lvv+Uz42nHQ4K0kXv6o5SpzqwC+x6+YAj2wDSfEWUz6paaZ07TO1qdGiOZwSJwcy3cmb9SNyi7rCMZqWKzTzGVqWzYhyqMGignnImv4yhh+HK4yf8WZA1bsmTibg4Q5SyFu6ObC5zGypPLwJ+h9V4WSpKF/r1VXXvUAtho+0B07/kU+GlE9Fkm639yC3MRbCH/WFfennppvPVA6qrYrXMjTIi5hxhQm8nFMHshy9rAMUMTEaL/qNXKs22vEUXzbN/R17hN7fq7qAGuUgwA+g/8AELQ1oKAv/M+ru8fDLQgSzrnfP7P06I9kuutmnyfSuhFEcyVTGmOWUUbFJvHfZvyD3UTNqg1Ww1KhxsYXxArsukiMXw+mKaNn1ayoHioBcFt++MtfJkZkKlDTwnyouqY15Nud+pdWBUzQR/l0gUTHYe3jWs6mNRLrqg26eC5oSpCDPP+00KKyo+rvKqDUCBP1ycGFPg0s3d/vXzeC2mzua3jywG5JvZm9bJPkGQFUqWK9VNEaDASN6dxdDOE/isfoOmQp4WiILvSeavwW+of2llmf5pW+BGQ3eDf6Zj/YC4MdZ6TU=
+  on:
+    tags: true
+    repo: flowbased/fbp-protocol-healthcheck
