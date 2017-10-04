@@ -30,6 +30,9 @@
     "nyc": "^11.2.1",
     "websocket": "^1.0.24"
   },
+  "bin": {
+    "fbp-protocol-healthcheck": "./bin/fbp-protocol-healthcheck"
+  },
   "nyc": {
     "include": [
       "lib/*.js",
