@@ -17,6 +17,19 @@ describe('Health Check library', () => {
       });
     }).timeout(100);
   });
+  describe('checking an unsupported protocol', () => {
+    it('should report failure immediately', (done) => {
+      healthCheck('foo://localhost:3569', 1000)
+        .then(() => {
+          done(new Error('Reported non-existing service as healthy'));
+        })
+        .catch((e) => {
+          expect(e).to.be.an('error');
+          expect(e.message).to.include('is not supported');
+          done();
+      });
+    }).timeout(100);
+  });
   describe('checking a runtime that doesn\'t send capabilities', () => {
     let server = null;
     let wsServer = null;
