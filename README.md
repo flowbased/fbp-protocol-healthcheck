@@ -16,6 +16,12 @@ $ fbp-protocol-healthcheck ws://localhost:3569
 
 The tool will exit with code 1 if the runtime is not available. This makes the tool usable for example as a [Docker HEALTHCHECK command](https://docs.docker.com/compose/compose-file/#healthcheck).
 
+You can also use the command to wait for runtime availability in shell scripts like Travis builds:
+
+```bash
+until ./node_modules/.bin/fbp-protocol-healthcheck ws://localhost:3569 || (( count++ >= 10 )); do echo "Waiting for runtime to be ready"; sleep 10; done
+```
+
 ## Programmatic usage
 
 Install this library, and then:
