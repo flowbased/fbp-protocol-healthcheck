@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/flowbased/fbp-protocol-healthcheck#readme",
   "dependencies": {
-    "fbp-protocol-client": "^0.2.2"
+    "fbp-protocol-client": "^0.3.0"
   },
   "devDependencies": {
     "chai": "^4.1.2",
