@@ -12,7 +12,7 @@ describe('Health Check library', () => {
         })
         .catch((e) => {
           expect(e).to.be.an('error');
-          expect(e.message).to.include('ECONNREFUSED');
+          expect(e.message).to.include('Connection failed');
           done();
       });
     }).timeout(100);
